@@ -5,7 +5,7 @@ public class Calculator {
         Scanner sc = new Scanner(System.in);
         double num1 , num2;
         char oper;
-        double result;
+        double result = 0.0;
 
         System.out.print("Enter first number : ");
         num1 = sc.nextInt();
@@ -13,7 +13,7 @@ public class Calculator {
 
         System.out.print("Enter second number : ");
         num2 = sc.nextInt();
-        System.out.prinltn();
+        System.out.println();
 
         System.out.println("Make sure that num2 should not be equal to 0 in case of operator '/' as it is not defined.");
         System.out.print("Enter operator (+,-,*,/) : ");
@@ -21,16 +21,16 @@ public class Calculator {
         System.out.println();
 
         switch(oper){
-            case '+' : result : num1+num2;
+            case '+' : result = num1 + num2;
             break;
 
-            case '-' : result : num1-num2;
+            case '-' : result = num1 - num2;
             break;
 
-            case '*' : result : num1*num2;
+            case '*' : result = num1 * num2;
             break;
 
-            case '/' : result : num1/num2;
+            case '/' : result = num1 / num2;
             break;
 
             default : System.out.println("Invalid operator");
