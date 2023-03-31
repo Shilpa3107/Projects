@@ -4,7 +4,7 @@ public class Tic_Tac_Toe {
 
    
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+       try(Scanner sc = new Scanner(System.in);){
 
         char[][] grid = new char[3][3];
         for(int  i =0;i<3;i++){
@@ -13,7 +13,7 @@ public class Tic_Tac_Toe {
             }
         }
         
-    char player1 , player2 ;
+    char player1 , player2  ;
     System.out.print("Choose one character ('X','O') : ");
     player1 = sc.next().charAt(0);
 
@@ -44,11 +44,13 @@ public class Tic_Tac_Toe {
 
         }
        
+    }
+    
        
-    }
 
 
     }
+}
 
 public static void griding(char arr[][]){
     for(int i = 0;i<3;i++){
@@ -70,12 +72,13 @@ public static void play1(char grid[][]){
 public static void play2(char grid[][]){
     try(Scanner sc = new Scanner(System.in);){
     System.out.println("Player2, Enter your grid : ");
-        int c1 = sc.nextInt();
-        int d1= sc.nextInt();
-        grid[c1][d1] = 'O';
+    int c = sc.nextInt();
+    int d = sc.nextInt();
+     grid[c][d] = 'O';
     }
-    
+
 }
+
 public static void win1(char grid[][]){
     
     int c1 = 0,c2 = 0;
