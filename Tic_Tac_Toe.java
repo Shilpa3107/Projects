@@ -26,8 +26,7 @@ public class Tic_Tac_Toe {
 
     if(player1 == 'X')
     {
-        for(int i = 0;i<9;i++){
-            play1(grid);
+        play1(grid);
             griding(grid);
     
             play2(grid);
@@ -42,7 +41,7 @@ public class Tic_Tac_Toe {
             win7(grid);
             win8(grid);
 
-        }
+        
        
     }
     
