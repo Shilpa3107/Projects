@@ -30,10 +30,10 @@ public class Tic_Tac_Toe {
         grid[c][d] = 'X';
         for(int i = 0;i<3;i++){
             for(int j = 0;j<3;j++){
-                System.out.print(grid[i][j]+"|");
+                System.out.print(grid[i][j]+" ");
 
             }
-            System.out.println("_");
+            System.out.println(" ");
         }
 
         System.out.println("Player2, Enter your grid : ");
@@ -42,10 +42,10 @@ public class Tic_Tac_Toe {
         grid[c1][d1] = 'O';
         for(int i = 0;i<3;i++){
             for(int j = 0;j<3;j++){
-                System.out.print(grid[i][j]+"|");
+                System.out.print(grid[i][j]+" ");
 
             }
-            System.out.println("_");
+            System.out.println(" ");
         }
 
         System.out.println("Player1, Enter your grid : ");
@@ -54,10 +54,10 @@ public class Tic_Tac_Toe {
         grid[c2][d2] = 'X';
         for(int i = 0;i<3;i++){
             for(int j = 0;j<3;j++){
-                System.out.print(grid[i][j]+"|");
+                System.out.print(grid[i][j]+" ");
 
             }
-            System.out.println("_");
+            System.out.println(" ");
         }
     }
 
