@@ -5,6 +5,11 @@ public class Tic_Tac_Toe {
       try(Scanner sc = new Scanner(System.in);){
 
         char[][] grid = new char[3][3];
+        for(int  i =0;i<3;i++){
+            for(int j = 0;j<3;j++){
+                grid[i][j] = ' ';
+            }
+        }
         
     char player1 , player2 ;
     System.out.print("Choose one character ('X','O') : ");
