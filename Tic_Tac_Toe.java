@@ -68,11 +68,12 @@ public static void play1(char grid[][]){
 
 }
 public static void play2(char grid[][]){
-    
+    try(Scanner sc = new Scanner(System.in);){
     System.out.println("Player2, Enter your grid : ");
         int c1 = sc.nextInt();
         int d1= sc.nextInt();
         grid[c1][d1] = 'O';
+    }
     
 }
 public static void win1(char grid[][]){
