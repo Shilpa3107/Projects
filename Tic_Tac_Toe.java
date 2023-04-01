@@ -32,12 +32,7 @@ public class Tic_Tac_Toe {
         int d = sc.nextInt();
          grid[c][d] = 'X';
 
-         for(int i = 0;i<3;i++){
-            for(int j = 0;j<3;j++){
-                System.out.print(grid[i][j]+" ");
-             }
-            System.out.println();
-        }
+       griding(grid);
 
 
         System.out.println("Player2, Enter your grid : ");
@@ -45,11 +40,21 @@ public class Tic_Tac_Toe {
     int d1 = sc.nextInt();
      grid[c1][d1] = 'O';
 
-     for(int i = 0;i<3;i++){
-        for(int j = 0;j<3;j++){
-            System.out.print(grid[i][j]+" ");
-         }
-        System.out.println();
+     griding(grid);
+
+        System.out.println("Player1, Enter your grid : ");
+        int c2 = sc.nextInt();
+        int d2 = sc.nextInt();
+         grid[c2][d2] = 'X';
+
+         griding(grid);
+
+         System.out.println("Player2, Enter your grid : ");
+         int c3= sc.nextInt();
+         int d3 = sc.nextInt();
+          grid[c3][d3] = 'O';
+     
+          griding(grid);
 
         win1(grid);
         win2(grid);
@@ -69,7 +74,7 @@ public class Tic_Tac_Toe {
 
 
     }
-}
+
 
 public static void griding(char arr[][]){
     for(int i = 0;i<3;i++){
