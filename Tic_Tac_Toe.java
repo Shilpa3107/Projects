@@ -92,24 +92,6 @@ public static void griding(char arr[][]){
         System.out.println();
     }
 }
-public static void play1(char grid[][]){
-    try(Scanner sc = new Scanner(System.in);){
-    System.out.println("Player1, Enter your grid : ");
-    int c = sc.nextInt();
-    int d = sc.nextInt();
-     grid[c][d] = 'X';
-    }
-
-}
-public static void play2(char grid[][]){
-    try(Scanner sc = new Scanner(System.in);){
-    System.out.println("Player2, Enter your grid : ");
-    int c = sc.nextInt();
-    int d = sc.nextInt();
-     grid[c][d] = 'O';
-    }
-
-}
 
 public static void win1(char grid[][]){
     
@@ -125,11 +107,11 @@ public static void win1(char grid[][]){
         }
     }
     if(c1 == 3){
-    System.out.println("Player1 Wins");
+    System.out.println("1Player1 Wins");
     System.exit(0);
     }
     else if(c2 == 3){
-    System.out.println("Player2 wins");
+    System.out.println("1Player2 wins");
     System.exit(0);
     }
 }
@@ -145,11 +127,11 @@ public static void win2(char grid[][]){
             }
         }
         if(c1 == 3){
-        System.out.println("Player1 wins");
+        System.out.println("2Player1 wins");
         System.exit(0);
         }
         else if(c2==3){
-        System.out.println("Player2 wins");
+        System.out.println("2Player2 wins");
         System.exit(0);
         }
     }
@@ -163,11 +145,11 @@ public static void win3(char grid[][]){
         c2++;
     }
     if(c1 == 3){
-        System.out.println("Player1 wins");
+        System.out.println("3Player1 wins");
         System.exit(0);
     }
         else if(c2==3){
-        System.out.println("Player2 wins");
+        System.out.println("3Player2 wins");
         System.exit(0);
         }
 }
@@ -180,11 +162,11 @@ public static void win4(char grid[][]){
         c2++;
     }
     if(c1 == 3){
-        System.out.println("Player1 wins");
+        System.out.println("4Player1 wins");
         System.exit(0);
     }
         else if(c2==3){
-        System.out.println("Player2 wins");
+        System.out.println("4Player2 wins");
         System.exit(0);
         }
 }
@@ -197,11 +179,11 @@ public static void win5(char grid[][]){
         c2++;
     }
     if(c1 == 3){
-        System.out.println("Player1 wins");
+        System.out.println("5Player1 wins");
         System.exit(0);
     }
         else if(c2==3){
-        System.out.println("Player2 wins");
+        System.out.println("5Player2 wins");
         System.exit(0);
         }
 }
@@ -214,11 +196,11 @@ public static void win6(char grid[][]){
         c2++;
     }
     if(c1 == 3){
-        System.out.println("Player1 wins");
+        System.out.println("6Player1 wins");
         System.exit(0);
     }
         else if(c2==3){
-        System.out.println("Player2 wins");
+        System.out.println("6Player2 wins");
         System.exit(0);
         }
 }
@@ -231,11 +213,11 @@ public static void win7(char grid[][]){
         c2++;
     }
     if(c1 == 3){
-        System.out.println("Player1 wins");
+        System.out.println("7Player1 wins");
         System.exit(0);
     }
         else if(c2==3){
-        System.out.println("Player2 wins");
+        System.out.println("7Player2 wins");
         System.exit(0);
         }
 }
@@ -248,11 +230,11 @@ public static void win8(char grid[][]){
         c2++;
     }
     if(c1 == 3){
-        System.out.println("Player1 wins");
+        System.out.println("8Player1 wins");
         System.exit(0);
     }
         else if(c2==3){
-        System.out.println("Player2 wins");
+        System.out.println("8Player2 wins");
         System.exit(0);
         }
     
