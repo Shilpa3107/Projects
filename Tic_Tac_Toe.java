@@ -26,27 +26,30 @@ public class Tic_Tac_Toe {
 
     if(player1 == 'X')
     {
-        play1(grid);
-            griding(grid);
-    
-            play2(grid);
-            griding(grid);
+        System.out.println("Player1, Enter your grid : ");
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+         grid[c][d] = 'X';
 
-            // win1(grid);
-            // win2(grid);
-            // win3(grid);
-            // win4(grid);
-            // win5(grid);
-            // win6(grid);
-            // win7(grid);
-            // win8(grid);
+         for(int i = 0;i<3;i++){
+            for(int j = 0;j<3;j++){
+                System.out.print(grid[i][j]+" ");
+             }
+            System.out.println();
+        }
 
-            play1(grid);
-            griding(grid);
-    
-            play2(grid);
-            griding(grid);
-        
+
+        System.out.println("Player2, Enter your grid : ");
+    int c1= sc.nextInt();
+    int d1 = sc.nextInt();
+     grid[c1][d1] = 'O';
+
+     for(int i = 0;i<3;i++){
+        for(int j = 0;j<3;j++){
+            System.out.print(grid[i][j]+" ");
+         }
+        System.out.println();
+    }
        
     }
     
