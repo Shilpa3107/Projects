@@ -26,6 +26,7 @@ public class Tic_Tac_Toe {
 
     if(player1 == 'X')
     {
+        for(int k = 0; k<9; k++){
         System.out.println("Player1, Enter your grid : ");
         int c = sc.nextInt();
         int d = sc.nextInt();
@@ -49,6 +50,17 @@ public class Tic_Tac_Toe {
             System.out.print(grid[i][j]+" ");
          }
         System.out.println();
+
+        win1(grid);
+        win2(grid);
+        win3(grid);
+        win4(grid);
+        win5(grid);
+        win6(grid);
+        win7(grid);
+        win8(grid);
+
+     }
     }
        
     }
