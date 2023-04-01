@@ -26,12 +26,7 @@ public class Tic_Tac_Toe {
 
     if(player1 == 'X')
     {
-        for(int k = 0; k<9; k++){
-        System.out.println("Player1, Enter your grid : ");
-        int c = sc.nextInt();
-        int d = sc.nextInt();
-         grid[c][d] = 'X';
-
+        play1(grid);
        griding(grid);
 
 
@@ -42,11 +37,7 @@ public class Tic_Tac_Toe {
 
      griding(grid);
 
-        System.out.println("Player1, Enter your grid : ");
-        int c2 = sc.nextInt();
-        int d2 = sc.nextInt();
-         grid[c2][d2] = 'X';
-
+     play1(grid);
          griding(grid);
 
          System.out.println("Player2, Enter your grid : ");
@@ -54,6 +45,9 @@ public class Tic_Tac_Toe {
          int d3 = sc.nextInt();
           grid[c3][d3] = 'O';
      
+          griding(grid);
+
+          play1(grid);
           griding(grid);
 
         win1(grid);
@@ -69,12 +63,6 @@ public class Tic_Tac_Toe {
     }
        
     }
-    
-       
-
-
-    }
-
 
 public static void griding(char arr[][]){
     for(int i = 0;i<3;i++){
