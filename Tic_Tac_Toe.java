@@ -29,21 +29,23 @@ public class Tic_Tac_Toe {
         play1(grid);
             griding(grid);
     
-            System.out.println("Player2, Enter your grid : ");
-    int c = sc.nextInt();
-    int d = sc.nextInt();
-     grid[c][d] = 'O';
+            play2(grid);
             griding(grid);
 
-            win1(grid);
-            win2(grid);
-            win3(grid);
-            win4(grid);
-            win5(grid);
-            win6(grid);
-            win7(grid);
-            win8(grid);
+            // win1(grid);
+            // win2(grid);
+            // win3(grid);
+            // win4(grid);
+            // win5(grid);
+            // win6(grid);
+            // win7(grid);
+            // win8(grid);
 
+            play1(grid);
+            griding(grid);
+    
+            play2(grid);
+            griding(grid);
         
        
     }
@@ -71,15 +73,15 @@ public static void play1(char grid[][]){
     }
 
 }
-// public static void play2(char grid[][]){
-//     try(Scanner sc = new Scanner(System.in);){
-//     System.out.println("Player2, Enter your grid : ");
-//     int c = sc.nextInt();
-//     int d = sc.nextInt();
-//      grid[c][d] = 'O';
-//     }
+public static void play2(char grid[][]){
+    try(Scanner sc = new Scanner(System.in);){
+    System.out.println("Player2, Enter your grid : ");
+    int c = sc.nextInt();
+    int d = sc.nextInt();
+     grid[c][d] = 'O';
+    }
 
-// }
+}
 
 public static void win1(char grid[][]){
     
