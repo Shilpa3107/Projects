@@ -29,7 +29,10 @@ public class Tic_Tac_Toe {
         play1(grid);
             griding(grid);
     
-            play2(grid);
+            System.out.println("Player2, Enter your grid : ");
+    int c = sc.nextInt();
+    int d = sc.nextInt();
+     grid[c][d] = 'O';
             griding(grid);
 
             win1(grid);
@@ -68,15 +71,15 @@ public static void play1(char grid[][]){
     }
 
 }
-public static void play2(char grid[][]){
-    try(Scanner sc = new Scanner(System.in);){
-    System.out.println("Player2, Enter your grid : ");
-    int c = sc.nextInt();
-    int d = sc.nextInt();
-     grid[c][d] = 'O';
-    }
+// public static void play2(char grid[][]){
+//     try(Scanner sc = new Scanner(System.in);){
+//     System.out.println("Player2, Enter your grid : ");
+//     int c = sc.nextInt();
+//     int d = sc.nextInt();
+//      grid[c][d] = 'O';
+//     }
 
-}
+// }
 
 public static void win1(char grid[][]){
     
