@@ -26,7 +26,7 @@ public class Tic_Tac_Toe {
 
     if(player1 == 'X')
     {
-        for(int k = 0; k<9; k++){
+        
         System.out.println("Player1, Enter your grid : ");
         int c = sc.nextInt();
         int d = sc.nextInt();
@@ -81,7 +81,7 @@ public class Tic_Tac_Toe {
        
 
 
-    }
+   
 
 
 public static void griding(char arr[][]){
