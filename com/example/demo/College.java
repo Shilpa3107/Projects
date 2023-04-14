@@ -5,8 +5,9 @@ public class College{
     public College(){
     }
 
-    public College(String Collname , String Coursename, Double coursefee, Integer DOF ,String AC , Double fee ){
+    public College(Integer sn, String Collname , String Coursename, Double coursefee, Integer DOF ,String AC , Double fee ){
         super();
+        this.sn = sn;
         this.Collname = Collname;
         this.Coursename = Coursename;
         this.Coursefee =  coursefee;
@@ -15,6 +16,7 @@ public class College{
         this.fee = fee;
 
     }
+    private Integer sn;
     private String Collname;
     private String Coursename;
     private Double Coursefee;
@@ -24,7 +26,14 @@ public class College{
 
     @Override
     public String toString(){
-        return "Details [College Name : "+Collname+"  Course Name :  "+Coursename+" Course Fee : "+Coursefee+" Duration of Course : "+DOF+" Accommodation AC/Non-AC : "+AC+" Accommodation Fee : "+fee+" ]";
+        return "Details [Sn : "+sn+" College Name : "+Collname+"  Course Name :  "+Coursename+" Course Fee : "+Coursefee+" Duration of Course : "+DOF+" Accommodation AC/Non-AC : "+AC+" Accommodation Fee : "+fee+" ]";
+    }
+    //getter and setter of the properties
+    public Integer getSn(){
+        return sn;
+    }
+    public void setSn(Integer sn){
+        this.sn = sn;
     }
     public String getCname(){
         return Collname;
