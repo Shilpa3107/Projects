@@ -5,11 +5,11 @@ public class College{
     public College(){
     }
 
-    public College(String Collname , String Coursename, Double Coursefee, Integer DOF ,String AC , Double fee ){
+    public College(String Collname , String Coursename, Double coursefee, Integer DOF ,String AC , Double fee ){
         super();
         this.Collname = Collname;
         this.Coursename = Coursename;
-        this.Coursefee = Coursefee;
+        this.Coursefee =  coursefee;
         this.DOF = DOF;
         this.AC = AC;
         this.fee = fee;
