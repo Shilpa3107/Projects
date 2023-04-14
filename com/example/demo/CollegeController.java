@@ -32,10 +32,16 @@ public class CollegeController {
         path = "/", consumes = "application/json", produces = "application/json"
     )
     public ReponseEntity<Object> addCollege(
-        @RequestBody College college
-    )
+        @RequestBody College college)
     {
-        Integer 
+        Integer sn = collegeDao.getAllColleges().getCollegeList().size()+1;
+        college.setSn(sn);
+
+        collegeDao.addCollege(college);
+
+        URI location = ServletUrComponentsBuilder.fromCurrentRequest().path("/{sn}").buildAndExpand(college.getSn()).toUri();
+
+        return ResponseEntity.created(location).builde();
     }
     
 }
